@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    background-color: azure;
+}
+.container{
+    width: 95%;
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto 0;
+    padding: 45px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.3);
+    border: 0;
+    border-radius: 8px;
+    outline:0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin: 1.2em auto;
+}
+form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.4em;
+    border: 1px solid rgba(98, 200, 255, 0.8);
+    background-color: rgba(204, 242, 251, 0.659);
+    border-radius: 8px;
+    outline: none;
+
+    label{
+        display: block;
+        margin: 0 0 5px 0;
+        font-weight: 600;
+    }
+    input, select{
+        padding: 0.8em;
+        margin: 0 0 20px 0;
+        border: 1px solid rgba(0,0,0,0.2);
+        outline: 0;
+        border-radius: 6px;
+    }
+    button{
+        padding: 0.6em;
+        background-color: rgb(48, 162, 250);
+        border: 0;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+.listContainer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.4em;
+    border: 1px solid rgba(0,0,0, 0.2);
+    background-color: rgba(0,0,0, 0.03);
+    border-radius: 8px;
+    outline: none;
+    ol{
+       li{
+        margin: 0 0 0.8em 3em;
+        padding: 0.4em;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+
+        a{
+            text-decoration: none;
+            color: rgb(0, 102, 255);
+        }
+       } 
+    }
+}
+.detailsContainer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.4em;
+    border: 1px solid rgba(0,0,0, 0.2);
+    border-radius: 8px;
+    outline: none;
+
+    table{
+        border-collapse: collapse;
+        thead tr{
+            text-align: left;
+            color:#fff;
+            background-color: rgb(25, 126, 250);
+            th{
+                padding: 0.6em;
+            }
+        }
+
+        tbody tr{
+            text-align: left;
+            border-bottom: 1px solid rgba(0,0,0, 0.2);
+
+            td{
+                padding: 5px 10px;
+            }
+
+            .pic{
+                width: 50px;
+                height: 50px;
+                background-color: rgb(203, 203, 203);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1em 0;
+
+                span{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+.locationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    iframe{
+        width: 100%;
+        border-radius: 8px;
+    }
+}
